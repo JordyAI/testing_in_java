@@ -2,8 +2,8 @@ package com.jordy.javatest.util;
 
 public class DateUtil {
 
-    public static boolean isLeapYear(){
-        return false;
+    public static boolean isLeapYear(int year){
+        return year % 400 == 0 || ( year % 100 != 0 && year % 4 == 0 );
     }
 
 }
