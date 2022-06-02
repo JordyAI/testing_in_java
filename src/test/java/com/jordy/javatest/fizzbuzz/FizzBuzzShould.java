@@ -22,4 +22,9 @@ public class FizzBuzzShould {
     public void return_FizzBuzz_if_number_divisible_by_5_and_by_3() {
         assertThat(FizzBuzz.fizzBuzz(15), is("FizzBuzz"));
     }
+
+    @Test
+    public void return_the_same_number_if_other_case() {
+        assertThat(FizzBuzz.fizzBuzz(2), is("2"));
+    }
 }
